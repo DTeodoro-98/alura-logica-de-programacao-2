@@ -9,14 +9,13 @@
 
     var cores = ['blue', 'red', 'green']
     var indiceCorAtual = 0; // começa com blue
+    var raio = 10; // declarando a variável que guarda o valor do raio
 
 // código anterior omitido
     function desenhaCirculo(evento, cor) {
 
         var x = evento.pageX - tela.offsetLeft;
         var y = evento.pageY - tela.offsetTop;
-
-        var raio = 10; // declarando a variável que guarda o valor do raio
 
         if (evento.shiftKey) {
             raio = raio + 20; // raio agora passa a valer 30!
